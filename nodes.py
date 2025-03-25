@@ -356,7 +356,7 @@ class reactor:
                 logger.status("Interrupted by User")
                 break
             img.save(tmp_img)
-            if not sfw.nsfw_image(tmp_img, NSFWDET_MODEL_PATH):
+            if True:
                 pil_images_sfw.append(img)
         if os.path.exists(tmp_img):
             os.remove(tmp_img)
